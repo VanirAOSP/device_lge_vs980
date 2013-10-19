@@ -11,7 +11,8 @@ for FILE in `cat proprietary-blobs.txt | grep -v ^# | grep -v ^$ `; do
     if [ ! -d $BASE/$DIR ]; then
         mkdir -p $BASE/$DIR
     fi
-    adb pull /system/$FILE $BASE/$FILE
+    [ -e $REPOPATH/vendor/lge/g2/proprietary/$FILE ] && cp $REPOPATH/vendor/lge/g2/proprietary/$FILE $BASE/$FILE
+#    adb pull /system/$FILE $BASE/$FILE
 done
 
 ./setup-makefiles.sh
