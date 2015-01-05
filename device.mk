@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnCdmaDevice=1 \
 	ro.telephony.default_network=10 \
-	ro.cdma.home.operator.numeric=311480 \
+	ro.cdma.home.operator.numeric=310004 \
 	ro.cdma.home.operator.alpha=Verizon \
 	ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
 
